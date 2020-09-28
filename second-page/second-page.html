@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>КаваТут</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+<section class="header">
+        <div class="container">
+            <div class="main-menu">
+                <div class="main-menu-logo">
+                    <a href="../index.html#header"><img src="../img/second-page-imgs/Black-Bird.svg" alt="Bird-logo"></a>
+                </div>
+                <div class="main-menu-list">
+                    <ul class="main-menu-items">
+                        <li class="main-menu-links-item"><a href="../index.html#about-us">Про нас</a></li>
+                        <li class="main-menu-links-item notFirst"><a href="../index.html#our-products">Наша продукція</a></li>
+                        <li class="main-menu-links-item notFirst"><a href="../index.html#gallery">Галерея</a></li>
+                        <li class="main-menu-links-item notFirst"><a href="../Price/Coffee_Tut_Price.pdf" target="_blank">Прайс</a></li>
+                    </ul>
+                </div>
+                <div class="main-menu-numbers" id="main-numbers">
+                    <p class="numbers"><img class="operators-logo" src="../img/vodafone.png" alt="vodafone-logo">+380 50 200 01 66 </p>
+                    <p class="numbers"><img class="operators-logo" src="../img/kyivstar.png" alt="kyivstar-logo">+380 97 200 01 66 </p>
+                    <p class="numbers"><img class="operators-logo" src="../img/life.png" alt="lifecell-logo">+380 73 200 01 66 </p>
+                    <p class="numbers"><a href="mailto:mail@coffeetut.com"><img class="operators-logo" src="../img/Mail.svg" alt="mail-logo">mail@coffeetut.com</a></p>
+                </div>
+                <div class="main-menu-numbers-logo" id="phone-logo"></div>
+                <div class="arrow-up-wrapper">
+                    <div id="back-top"><a href="#top"><i class="arrow up"></i></a></div>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="our-products">
+    <div class="container">
+        <div class="our-products-slogan">
+            <p class="product-slogan">Наша продукція</p>
+        </div>
+        <div class="coffee-options" id="options-container">
+            <p class="options firmovi-options active" onclick="filterSelection('firm')">Фірмові купажі</p>
+            <p class="options monosort-options" onclick="filterSelection('mono')">Арабіка</p>
+            <p class="options robusta-options" onclick="filterSelection('robusta')">Робуста</p>
+        </div>
+        <div class="tabs">
+            <div class="each-product mono">
+                <div class="each-product-title">
+                    <p>Колумбия Supremo</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Збалансований, солодкуватий смак із нотками карамелі та шоколаду, з приємною фруктово-винною гірчинкою</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Бразилия Santos</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Найвідоміша кава Бразилії. Шоколадно-горіховий смак із помірною гірчинкою, тонкий аромат із солодкими нотками.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Гондурас SHG</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Щільний та насичений напій. Післясмак розкривається нотками червоного вина, фруктів та грецького горіху.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Бурунді А</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>М’яка кислотність, яскравий смак із фруктовими нотками. Фруктовий аромат із шоколадним післясмаком.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Коста Ріка Tarrazú</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Легка лимонна кислотність з нотками малини, ванілі та горіхів.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Перу НВ ЕР</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Помірна кислотність та збалансований смак майже без гірчинки. Ніжний аромат із нотками прянощів та хліба.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Гватемала SHB</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Смак із шоколадними та цитрусовими нотками, дуже легка кислинка. Яскравий шоколадний аромат.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Індія Plantation AA</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Кава із нейтральною кислотністю, легкими древесними нотками а також какао, горіхів та сухофруктів.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Мексика SHG EP</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Ароматна кава із винними нотками, яка містить горіхові, шоколадні та ванильні напівтони.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Гватемала Maragogype</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Низький вміст кофеїну, великий розмір зерна. Солодкий пікантний смак із легкою кислинкою. Фруктовий аромат.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Нікарагуа SHG</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Помірна кислотність. Виражений цитрусовий та фруктовий смак. Яскравий аромат, легкий квітковий післясмак.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Сальвадор SHG</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Помітна кислотність, яскравий фруктовий смак. Аромат з нотами сухофруктів, яблука та кориці.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Нікарагуа Maragogype</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Великий розмір зерна. Міцний, ароматний напій. Насичений. яскравий смак із шоколадними та фруктовими нотами.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Ефіопія Djimmah Grade 5</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Високий вміст кофеїну, помірна кислотність. Гіркий насичений смак із цитрусовими та шоколадними нотами.</p>
+                </div>
+            </div>
+            <div class="each-product all mono">
+                <div class="each-product-title">
+                    <p>Ефіопія Yirgacheffe</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Солодкий фруктовий аромат із нотками шоколаду. Приємна кислотність та ледь помітна гірчинка. Карамельний післясмак.</p>
+                </div>
+            </div>
+            <div class="each-product all firm">
+                 <div class="each-product-title">
+                    <p>Каватут Nero</p>
+                 </div>
+                 <div class="each-product-img">
+                     <img src="../img/Beans.png" alt="Coffee beans">
+                 </div>
+                 <div class="each-product-text">
+                     <p>Ідеальне співвідношення арабіки та робусти з краін Азії, Африки та Латинської Америки. Неперевершений шоколадний аромат.</p>
+                 </div>
+            </div>
+             <div class="each-product all firm">
+                  <div class="each-product-title">
+                      <p>Каватут Bianco</p>
+                  </div>
+                  <div class="each-product-img">
+                      <img src="../img/Beans.png" alt="Coffee beans">
+                  </div>
+                  <div class="each-product-text">
+                      <p>Бленд арабіки та робусти, обсмажений за італійською технологією. Яскраво виражений шоколадний та горіховий смак.</p>
+                  </div>
+             </div>
+            <div class="each-product all firm">
+                <div class="each-product-title">
+                    <p>Каватут Dorato</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Купаж добірної арабіки. Нотки спецій в ароматі та делікатна фірмова кислинка. Фруктово-ягідний післясмак.</p>
+                </div>
+            </div>
+            <div class="each-product all firm">
+                <div class="each-product-title">
+                    <p>Каватут Rosso</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Бленд арабіки та робусти. Має збалансований делікатний смак. Напій з відтінками шоколаду, фруктів та горіхів. Глибокий насичений смак.</p>
+                </div>
+            </div>
+            <div class="each-product all robusta">
+                <div class="each-product-title">
+                    <p>В’єтнам</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Високий вміст кофеїну. Міцна кава із гірким смаком. Аромати ржаного хлібу та горіхів. Приємний гіркий смак.</p>
+                </div>
+            </div>
+            <div class="each-product all robusta">
+                <div class="each-product-title">
+                    <p>Індія Cherry</p>
+                </div>
+                <div class="each-product-img">
+                    <img src="../img/Beans.png" alt="Coffee beans">
+                </div>
+                <div class="each-product-text">
+                    <p>Високий вміст кофеїну. Міцна кава із гірким смаком. Насичений вершковий аромат. Довгий гіркий післясмак.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <footer class="footer-part">
+            <div class="footer-logo">
+                <a href="../index.html#header"><img src="../img/Bird.svg" alt="Bird-logo"></a>
+            </div>
+            <div class="footer-menu">
+                <ul class="footer-menu">
+                    <li class="footer-menu-links-item"><a class="link-item-font" href="../index.html#about-us">Про нас</a></li>
+                    <li class="footer-menu-links-item"><a class="link-item-font" href="../index.html#our-products">Наша продукція</a></li>
+                    <li class="footer-menu-links-item"><a class="link-item-font" href="../index.html#gallery">Галерея</a></li>
+                </ul>
+            </div>
+            <div class="contacts-price-btn" id="contacts">
+                <div class="footer-contacts-item-operators">
+                    <p class="numbers-footer"><img class="operators-logo-footer" src="../img/vodafone.png" alt="vodafone-logo">+380 50 200 01 66 </p>
+                    <p class="numbers-footer not-first-operator"><img class="operators-logo-footer" src="../img/kyivstar.png" alt="kyivstar-logo">+380 97 200 01 66 </p>
+                    <p class="numbers-footer not-first-operator"><img class="operators-logo-footer" src="../img/life.png" alt="lifecell-logo">+380 73 200 01 66 </p>
+                </div>
+                <div class="footer-contacts-item contact-item-mail">
+                    <div class="footer-contacts-img">
+                        <img class="footer-contacts-img" src="../img/Mail.svg" alt="Mail">
+                    </div>
+                    <span class="footer-contacts-text">mail@coffeetut.com</span>
+                </div>
+                <div class="price-btn-wrapper">
+                    <button class="price-btn"><a class="btn-link-font" href="../Price/Coffee_Tut_Price.pdf" download>Завантажити прайс</a></button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+<script src="../script/index2.js"></script>
+</body>
+</html>

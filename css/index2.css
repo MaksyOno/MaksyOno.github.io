@@ -1,0 +1,325 @@
+.options.active{
+    border-bottom: 4px solid #FFECAF;
+}
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 5%;
+}
+i {
+    border: solid #EEC952;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+body, html{
+    overflow-x: hidden;
+}
+body, p, ul, li, h1, h2, h3, h4, h5, h6, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a:active {
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+a{
+    color: #000;
+}
+@font-face {
+    font-family: Oswald; /* Имя шрифта */
+    src: url(../Fonts/Oswald-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../Fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+body {
+    min-width: 320px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.main-menu-logo{
+    margin-left: 78px;
+    margin-top: 16px;
+    margin-right: 79px;
+
+}
+.main-menu-items{
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: 35px;
+}
+.main-menu-links-item{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    border-bottom: 1px solid #FFF;
+}
+.notFirst{
+    margin-left: 68px;
+}
+.main-menu-links-item:hover{
+    border-bottom: 1px solid #FFECAF;
+}
+.main-menu-numbers{
+    margin-top: 48px;
+    margin-right: 125px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.main-menu-numbers-logo{
+    display: none;
+}
+.numbers{
+    margin-bottom: 4px;
+}
+.operators-logo{
+    margin-right: 10px;
+}
+.our-products{
+}
+.our-products-slogan{
+    text-align: center;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 38px;
+    color: #070809;
+}
+.coffee-options{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 272px;
+    margin-right: 272px;
+}
+.options{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #070809;
+    border-bottom: 4px solid #FFF;
+    cursor: pointer;
+}
+.tabs{
+    display: flex;
+    margin-top: 51px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 112px;
+    margin-right: 176px;
+}
+.each-product{
+    width: 320px;
+    height: 448px;
+    background: #FFF;
+    border: 1px solid #EEC952;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 64px;
+    margin-left: 64px;
+    display: none;
+}
+.show {
+    display: flex;
+}
+.each-product-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #070809;
+    margin-top: 66px;
+}
+.each-product-img{
+    margin-top: 24px;
+}
+.each-product-text{
+    width: 262px;
+    height: 152px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    color: #4F4F4F;
+    margin: 32px auto;
+}
+.footer-part{
+    padding-top: 50px;
+    background: #413E37;
+    width: 100%;
+    height: 275px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-menu-links-item{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 32px;
+}
+.link-item-font{
+    color: #FFFFFF !important;
+}
+.footer-contacts-item{
+    display: flex;
+    margin-bottom: 32px;
+    align-items: baseline;
+}
+.footer-contacts-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.footer-contacts-img{
+    margin-right: 16px;
+}
+.price-btn{
+    width: 240px;
+    height: 64px;
+    left: 1024px;
+    top: 4224px;
+    border: 1px solid #EEC952;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    background: #413E37;
+}
+.btn-link-font{
+    color: #EEC952 !important;
+}
+.price-btn:hover{
+    border: 4px solid #EEC952;
+}
+.main-menu-numbers-logo{
+    display: none;
+}
+.contacts-price-btn{
+    width: 240px;
+}
+.footer-contacts-item-operators{
+    display: flex;
+    flex-direction: column;
+}
+.operators-logo-footer{
+    margin-right: 31px;
+}
+.numbers-footer{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.not-first-operator{
+    margin-top: 16px;
+}
+.contact-item-mail{
+    margin-top: 16px;
+}
+
+@media all and (max-width: 1493px) {
+    .main-menu-logo{
+        margin-left: 40px;
+        margin-right: 49px;
+    }
+    .notFirst{
+        margin-left: 48px;
+    }
+    .main-menu-numbers{
+        margin-left: 49px;
+    }
+    .tabs{
+        margin-left: 40px;
+        margin-right: 80px;
+    }
+    .each-product{
+        margin-left: 40px;
+    }
+}
+
+@media all and (max-width: 1330px){
+    .main-menu-logo{
+        margin-left: 48px;
+        margin-right: 40px;
+    }
+    .main-menu-numbers-logo{
+        background-image: url("../img/second-page-imgs/Phone-Black.svg");
+        background-size: cover;
+        display: flex;
+        width: 24px;
+        height: 24px;
+        margin-top: 48px;
+        margin-right: 64px;
+        margin-left: 33px;
+        cursor: pointer;
+    }
+    .main-menu-numbers-logo:hover{
+        background-image: url("../img/telephone-logo-hover.svg");
+        background-size: cover;
+    }
+    .main-menu-numbers{
+        display: none;
+        position: absolute;
+        margin: 0;
+        left: 80%;
+        top: 15%;
+    }
+    .text{
+        max-width: 384px;
+    }
+    .tabs{
+        margin-left: 8px;
+        margin-right: 40px;
+    }
+    .each-product{
+        margin-left: 32px;
+    }
+}
+@media all and (max-width: 1084px){
+    .notFirst{
+        margin-left: 22px;
+    }
+}

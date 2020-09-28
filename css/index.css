@@ -1,0 +1,587 @@
+body, html{
+    overflow-x: hidden;
+}
+body, p, ul, li, h1, h2, h3, h4, h5, h6, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a:active {
+    color: unset;
+}
+
+a:visited {
+    color: unset;
+}
+a{
+    color: unset;
+}
+@font-face {
+    font-family: Oswald; /* Имя шрифта */
+    src: url(../Fonts/Oswald-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../Fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+body {
+    min-width: 320px;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-background-wrapper{
+    width: 100%;
+    height: 768px;
+    background: url("../img/Headerbckg.png") no-repeat center;
+    background-size: cover;
+}
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.main-menu-logo{
+    margin-left: 108px;
+    margin-top: 18px;
+    margin-right: 34px;
+
+}
+.main-menu-items{
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: 35px;
+}
+.notFirst{
+    margin-left: 68px;
+}
+.main-menu-links-item{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFF;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.main-menu-links-item:hover{
+    border-bottom: 1px #FFFFFF solid;
+}
+.main-menu-numbers{
+    margin-top: 48px;
+    margin-right: 125px;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.main-menu-numbers-logo{
+    display: none;
+}
+.numbers{
+    margin-bottom: 4px;
+}
+.operators-logo{
+    margin-right: 10px;
+}
+.main-slogan{
+    text-align: center;
+    margin-top: 64px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 72px;
+    color: #FFF;
+}
+.our-benefits{
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 157px;
+    margin-right: 200px;
+
+}
+.each-benefit{
+    display: flex;
+}
+.benefit-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+.benefit-text-1{
+    width: 123px;
+    height: 32px;
+}
+.benefit-text-2{
+    width: 216px;
+    height: 64px;
+}
+.benefit-text-3{
+    width: 132px;
+    height: 32px;
+}
+.each-benefit{
+    align-items: center;
+}
+.title{
+    margin-top: 84px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 38px;
+    color: #070809;
+    text-align: center;
+}
+.about-us-wrapper{
+    text-align: center;
+}
+.about-us-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #070809;
+}
+.about-us-text-1{
+    text-align: justify;
+    width: 488px;
+    height: 416px;
+}
+.about-us-text-2{
+    text-align: justify;
+    width: 488px;
+    height: 256px;
+}
+.about-us-text-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-left: 176px;
+    margin-right: 176px;
+}
+.about-us-text-end{
+    text-align: right;
+
+}
+.about-us-img{
+    margin-left: 72px;
+    width: 512px;
+    height: 712px;
+    z-index: 40;
+
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 51px;
+    margin-left: 112px;
+    margin-right: 176px;
+
+}
+.product-img-text-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 91px;
+}
+.product-text-button{
+    margin-left: 64px;
+}
+.product-text{
+    width: 752px;
+    height: 120px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #070809;
+    text-align: justify;
+}
+.show-more{
+    width: 320px;
+    height: 88px;
+    background: #FFECAF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #070809;
+    border: none;
+    margin-top: 64px;;
+}
+.show-more:hover{
+    font-size: 25px;
+    transition: all 0.3s ease 0s;
+    border: 3px solid #070809;
+    box-sizing: border-box;
+    background: none;
+}
+.gallery-wrapper{
+    text-align: center;
+    margin-top: 63px;
+}
+.gallery-title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 38px;
+    color: #070809;
+}
+.gallery-title-arrows-wrapper{
+    margin-top: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    margin-bottom: 89px;
+}
+
+.footer-part{
+    padding-top: 50px;
+    background: #413E37;
+    width: 100%;
+    height: 275px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-menu-links-item{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+.footer-contacts-item{
+    display: flex;
+    margin-bottom: 32px;
+}
+.footer-contacts-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.footer-contacts-img{
+    margin-right: 16px;
+}
+.price-btn{
+    width: 240px;
+    height: 64px;
+    left: 1024px;
+    top: 4224px;
+    border: 1px solid #EEC952;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #EEC952 !important;
+
+    background: #413E37;
+}
+.contacts-price-btn{
+    width: 240px;
+}
+.price-btn:hover{
+    border: 1px solid #FFF;
+    color: #FFF !important;
+    transition: all 0.3s ease 0s;
+}
+.footer-contacts-item-operators{
+    display: flex;
+    flex-direction: column;
+}
+.operators-logo-footer{
+    margin-right: 31px;
+}
+.numbers-footer{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.not-first-operator{
+    margin-top: 16px;
+}
+.contact-item-mail{
+    margin-top: 16px;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 65px;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+.slider__control_show {
+    display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 15%;
+}
+
+.slider__control_right {
+    right: 15%;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("../img/Left.svg");
+}
+
+.slider__control_right::before {
+    background-image: url("../img/Right.svg");
+}
+
+.slider__item>div {
+    text-align: center;
+}
+.slider-item-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    color: #4F4F4F;
+    margin-right: 431px;
+}
+.slider-img {
+    width: 768px;
+}
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 5%;
+}
+i {
+    border: solid #EEC952;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+@media all and (max-width: 1467px) {
+    .main-menu-logo{
+        margin-left: 40px;
+    }
+    .main-menu-items{
+        margin-left: 0;
+    }
+    .notFirst{
+        margin-left: 48px;
+    }
+    .main-menu-numbers{
+        margin-left: 49px;
+        margin-right: 52px;
+    }
+    .main-slogan{
+        font-size: 56px;
+    }
+    .about-us-img{
+        width: 496px;
+        height: 704px;
+    }
+    .about-us-text-image{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .gallery-img{
+        width: 600px;
+        height: 400px;
+    }
+    .about-us-picture{
+        width: 496px;
+        height: 704px;
+    }
+    .products{
+        margin-left: 40px;
+        margin-right: 80px;
+    }
+    .each-product{
+        margin-left: 40px;
+    }
+}
+@media all and (max-width: 1216px) {
+    .gallery-slider{
+        justify-content: end;
+    }
+}
+
+@media all and (max-width: 1210px) {
+    .main-menu-numbers-logo{
+        background-image: url("../img/phone-logo.svg");
+        background-size: cover;
+        display: flex;
+        width: 24px;
+        height: 24px;
+        margin-top: 48px;
+        margin-right: 64px;
+        margin-left: 33px;
+        cursor: pointer;
+    }
+    .main-menu-numbers-logo:hover{
+        background-image: url("../img/telephone-logo-hover.svg");
+        background-size: cover;
+    }
+    .main-menu-numbers{
+        display: none;
+        position: absolute;
+        margin: 0;
+        left: 80%;
+        top: 12%;
+    }
+    .our-benefits{
+        margin-left: 94px;
+        margin-right: 95px;
+    }
+    .about-us-text-image{
+        margin-left: 41px;
+        margin-right: 41px;
+        margin-top: 35px;
+    }
+    .about-us-text-1{
+        width: 335px;
+        height: 336px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .about-us-text-2{
+        width: 336px;
+        height: 224px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .about-us-text-end{
+        font-size: 14px;
+        line-height: 32px;
+    }
+    .about-us-picture{
+        width: 406px;
+        height: 520px;
+        margin-top: 34px;
+    }
+    .title{
+        margin-top: 63px;
+    }
+    .products{
+        margin-left: 8px;
+        margin-right: 40px;
+    }
+    .each-product{
+        margin-left: 32px;
+    }
+}
+
+@media all and (max-width: 1150px){
+    .product-text{
+        width: 500px;
+    }
+}
+@media all and (max-width: 1030px){
+    .notFirst{
+        margin-left: 22px;
+    }
+    .our-benefits{
+        margin-left: 45px;
+        margin-right: 40px;
+    }
+}
+
+@media all and (max-width: 1231px) {
+    .slider__control_left {
+        left: 9%;
+    }
+
+    .slider__control_right {
+        right: 9%;
+    }
+}
+@media all and (max-width: 1046px) {
+    .slider__control_left {
+        left: 4%;
+    }
+
+    .slider__control_right {
+        right: 4%;
+    }
+}
+
+@media all and (max-width: 924px) {
+    .slider__control_left {
+        left: 2%;
+    }
+
+    .slider__control_right {
+        right: 2%;
+    }
+}
